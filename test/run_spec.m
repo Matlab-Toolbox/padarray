@@ -9,8 +9,8 @@
   %% Import functions 
   import padarray_pkg.* ;
  
-  a_horiz = [1,2,3];
-  b = padarray(a_horiz, 5);
+  a_horiz     = [1,2,3];
+  b           = padarray(a_horiz, 5);
   error_count = 0;
   pass_count  = 0;
   
@@ -18,7 +18,7 @@
     disp('padarray(a_horiz, 5) Failed ')
     error_count = error_count + 1;
   else
-    pass_count  = pass_count + 1;
+    pass_count  = pass_count  + 1;
   end
 
   b = padarray(a_horiz, 10);
@@ -27,7 +27,7 @@
     disp('padarray(a_horiz, 10) Failed ')
     error_count = error_count + 1;
   else
-    pass_count  = pass_count + 1;
+    pass_count  = pass_count  + 1;
   end
 
   a_vert = [1;2;3];

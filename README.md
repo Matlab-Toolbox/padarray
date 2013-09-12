@@ -10,13 +10,13 @@ Matlab (Packaged) function to zero pad arrays.
     import padarray_pkg.* ;
 
     >> a = [1,2,3];
-    >> padarray(a, 5)
-      ans =
+    >> padarray_pkg.padarray(a, 5)
+    ans =
      
          1     2     3     0     0
 
     >> a = [1;2;3];
-    >> padarray(a, 5)
+    >> padarray_pkg.padarray(a, 5)
 
     ans =
 
