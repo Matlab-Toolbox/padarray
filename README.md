@@ -1,7 +1,13 @@
 matlab_padarray
 ===============
 
-Matlab function to zero pad arrays.
+Matlab (Packaged) function to zero pad arrays.
+
+    %% Add package to path (+function folder must be on path for import) 
+    addpath('your_import_path/matlab_padarray/package/');
+
+    %% Import functions
+    import padarray_pkg.* ;
 
     >> a = [1,2,3];
     >> padarray(a, 5)

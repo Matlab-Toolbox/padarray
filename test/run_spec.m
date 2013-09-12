@@ -1,8 +1,13 @@
 %function run_spec
   clear;
+  %% Clear import list to test correct library
+  clear import; 
 
-  %% Add scripts path
-  addpath('../function/');
+  %% Add package to path (+function folder must be on path)
+  addpath('../package/');
+
+  %% Import functions 
+  import padarray_pkg.* ;
  
   a_horiz = [1,2,3];
   b = padarray(a_horiz, 5);
